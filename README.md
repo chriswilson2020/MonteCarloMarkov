@@ -9,7 +9,7 @@ This notebook is a Python implementation of a simulation using a Markov Model to
 
 <img width="583" alt="Screenshot 2023-12-17 at 11 44 18" src="https://github.com/chriswilson2020/MonteCarloMarkov/assets/73828727/d0e979b8-c1ec-442c-b035-a090c96f44dd">
 
-Here's a breakdown of what the Monte Carlo simulation modifies and how it works in this context:
+Here's a breakdown of what the Monte Carlo simulation and the Markov Model do and how it works in this context:
 ### Monte Carlo Simulation: 
 Monte Carlo simulation is a statistical technique used to estimate outcomes of complex systems by generating random samples from known probability distributions. In this case, the simulation is used to estimate the total costs associated with medical treatments.
 
