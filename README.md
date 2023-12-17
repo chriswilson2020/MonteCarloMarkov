@@ -31,8 +31,13 @@ The probabilities in the first row of the matrix show how these different possib
 In the context of the transition matrices, each column represents the potential next health state or condition that a person can transition to from their current state. Each element within a column represents the probability of making that specific transition.
 
 **Column 1:** This column represents the probability of transitioning to the same health state or staying in the current state. It indicates the likelihood of remaining in the current condition without any changes.
+
 **Column 2:** This column represents the probability of transitioning to a specific health state associated with adverse event 1 (p_adverse1). It indicates the likelihood of moving to a different state due to the occurrence of adverse event 1.
+
 **Column 3:** This column represents the probability of transitioning to a specific health state associated with adverse event 2 (p_adverse2). It indicates the likelihood of moving to a different state due to the occurrence of adverse event 2.
+
 **Column 4:** This column represents the probability of transitioning to a specific health state associated with disease progression. In this scenario, it is used for transitions other than adverse events and death.
+
 **Column 5:** This column represents the probability of transitioning to a specific health state associated with a fatal event or death (p_death). It indicates the likelihood of moving from the current state to the state of death, which is a terminal state in this model.
+
 **Column 6:** This column is used as a terminal state, where a person's health journey ends.
