@@ -41,3 +41,9 @@ In the context of the transition matrices, each column represents the potential 
 **Column 5:** This column represents the probability of transitioning to a specific health state associated with a fatal event or death (p_death). It indicates the likelihood of moving from the current state to the state of death, which is a terminal state in this model.
 
 **Column 6:** This column is used as a terminal state, where a person's health journey ends.
+
+#### Simulation Process:
+The run_simulation method of the MarkovModel class performs a single simulation run for a specified number of cycles (20 years in this case).
+In each cycle, it calculates the next state based on transition probabilities defined in the transition matrix. It uses random multinomial sampling (np.random.multinomial) to determine how many individuals move from one state to another.
+It also simulates the occurrence of new cases or diagnoses (e.g., prevalence) by adding a Poisson-distributed random value to the initial state.
+It calculates the total cost for the current state and accumulates it over time. This cost is adjusted for insurance premiums. The simulation also assumes an annual increase in insurance premiums. The results of each cycle are stored in costs_over_time.
