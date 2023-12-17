@@ -42,8 +42,17 @@ In the context of the transition matrices, each column represents the potential 
 
 **Column 6:** This column is used as a terminal state, where a person's health journey ends.
 
-#### Simulation Process:
+### Simulation Process:
 The run_simulation method of the MarkovModel class performs a single simulation run for a specified number of cycles (20 years in this case).
 In each cycle, it calculates the next state based on transition probabilities defined in the transition matrix. It uses random multinomial sampling (np.random.multinomial) to determine how many individuals move from one state to another.
 It also simulates the occurrence of new cases or diagnoses (e.g., prevalence) by adding a Poisson-distributed random value to the initial state.
 It calculates the total cost for the current state and accumulates it over time. This cost is adjusted for insurance premiums. The simulation also assumes an annual increase in insurance premiums. The results of each cycle are stored in costs_over_time.
+
+### Custom Transition Matrices:
+The code defines two custom transition matrices, one for Treatment A and one for Treatment B. These matrices specify the probabilities of transitioning between different health states for each treatment.
+The probabilities for adverse events and transitions between states may vary for each treatment, and these probabilities are sampled from normal distributions to introduce randomness into the simulation.
+
+### Parallel Simulation:
+To speed up the simulation, the code uses concurrent processing with a ProcessPoolExecutor to run multiple simulations in parallel.
+The simulate_treatment_A_chunk and simulate_treatment_B_chunk functions perform a batch of simulations for Treatment A and Treatment B, respectively.
+Multiple simulations are run in parallel by creating a pool of worker processes, and the results are collected at the end.
