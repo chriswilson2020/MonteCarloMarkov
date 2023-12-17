@@ -1,6 +1,8 @@
 # Monte Carlo Markov Simulations
 I developed this Jupyter Notebook to run parallel Monte Carlo Simulations of Markov Models for Health Economics.  The notebook sets up the required class and functions for the simulation and implements a parallel approach using concurent futures and also optimises efficiency by implementing chunks. i.e. instead of computing each simulation in its own thread we bundle simulations into chunks giving a substantial performance bump. 
 
+<img width="595" alt="Screenshot 2023-12-17 at 11 44 18" src="https://github.com/chriswilson2020/MonteCarloMarkov/assets/73828727/4e4edab3-9b32-4ade-b004-c5162fcf8e55">
+
 ## Introduction
 This notebook is a Python implementation of a simulation using a Markov Model to estimate costs for two different medical treatments with different associated adverse effects and benefits, Treatment A and Treatment B, over a 20-year period. The simulation is performed using Monte Carlo methods. 
 
