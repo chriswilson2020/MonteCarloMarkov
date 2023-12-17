@@ -23,7 +23,7 @@ The code defines a MarkovModel class that represents a Markov Model for a medica
 
 The person begins in a healthy state, which is represented in the first row of the matrix. They have some chance of staying healthy and not experiencing any adverse events, which is given by the probability p_stay. This means there's a certain likelihood that they will remain healthy in the next time period.
 
-##### However, there are also other possibilities:
+#### However, there are also other possibilities:
 They may experience adverse events (such as illness or injury) with probabilities p_adverse1 and p_adverse2, which could move them to other states that represent worsening health conditions.
 There's a small chance of death, represented by the probability p_death. If this happens, the person's journey ends in death.
 The probabilities in the first row of the matrix show how these different possibilities affect the person's health over time. The value in the "death" column of the first row represents the probability of transitioning from a healthy state to death in the next time period.
