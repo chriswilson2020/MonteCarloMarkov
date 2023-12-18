@@ -13,4 +13,4 @@ As a benchmark for the parallel execution I ran the simulation code without pass
 |15000|28.751|28.5117|28.8839|28.72|
 |20000|38.2594|38.3063|38.1841|38.25|
 |25000|48.2842|47.3016|47.7972|47.79|
-</P>
+</p>
