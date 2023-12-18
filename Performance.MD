@@ -5,8 +5,10 @@ As a benchmark for the parallel execution I ran the simulation code without pass
 <p align="center">
 <img width=50% alt="Single Threaded" src="https://github.com/chriswilson2020/MonteCarloMarkov/blob/09ee354dfcbfbef9774a99eb4e287c59b41fa3d9/images/Single%20Threaded%20Performance.png"><br>
 <em>Plot of single threaded performance of the Monte Carlo Markov Chain Simulation</em><br>
+<br>
 <em>Tabulated Data of Single Threaded Performance</em>
 </p>
+
 |**Simulations**|**Wall Time 1**|**Wall Time 2**|**Wall Time 3**|**Average Wall Time**|
 |---|---|---|---|---|
 |5000|9.6885|9.6359|9.6588|9.66|
