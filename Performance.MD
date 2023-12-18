@@ -9,6 +9,7 @@ As a benchmark for the parallel execution I ran the simulation code without pass
 <em>Tabulated Data of Single Threaded Performance</em>
 </p>
 
+<center>
 |**Simulations**|**Wall Time 1**|**Wall Time 2**|**Wall Time 3**|**Average Wall Time**|
 |---|---|---|---|---|
 |5000|9.6885|9.6359|9.6588|9.66|
@@ -16,4 +17,4 @@ As a benchmark for the parallel execution I ran the simulation code without pass
 |15000|28.751|28.5117|28.8839|28.72|
 |20000|38.2594|38.3063|38.1841|38.25|
 |25000|48.2842|47.3016|47.7972|47.79|
-
+</center>
