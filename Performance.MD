@@ -3,7 +3,7 @@
 As a benchmark for the parallel execution I ran the simulation code without passing it into concurrent futures or with any batching. As you can see from the image below the single threaded performance is rather linear on my 32 core AMD Epyc 7551P with 192Gb DDR4 up to 25,000 itterations I didn't go any futher than this as I only wanted something to compare the multi-threaded performance to.  
 
 <p align="center">
-<img width=50% alt="Single Threaded" src="https://github.com/chriswilson2020/MonteCarloMarkov/blob/09ee354dfcbfbef9774a99eb4e287c59b41fa3d9/images/Single%20Threaded%20Performance.png">
+<img width=50% alt="Single Threaded" src="https://github.com/chriswilson2020/MonteCarloMarkov/blob/09ee354dfcbfbef9774a99eb4e287c59b41fa3d9/images/Single%20Threaded%20Performance.png"><br>
 <em>Plot of single threaded performance of the Monte Carlo Markov Chain Simulation</em>
 </p>
 
